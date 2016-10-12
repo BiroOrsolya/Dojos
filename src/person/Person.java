@@ -74,4 +74,10 @@ public class Person implements Comparable<Person>
 		return false;
 	}
 
+	@Override
+	public int hashCode()
+	{
+		return 0;
+	}
+
 }
