@@ -25,8 +25,8 @@ public class GuessTheNumber
 				System.out.println("Your guess is bigger than the generated number!");
 				guess = input.nextInt();
 				count++;
-
 			}
+
 		}
 
 		return ("You find the number, well done! You guessed " + (count + 1) + " times.");

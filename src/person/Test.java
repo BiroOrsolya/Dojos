@@ -1,7 +1,7 @@
 package person;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Test
 {
@@ -13,19 +13,32 @@ public class Test
 		Person balazs = new Person("Balazs", 28, 1.7, Sex.MALE);
 		Person pista = new Person("Pista", 28, 1.4, Sex.MALE);
 
-		Set<Person> personSet = new HashSet<Person>();
-		personSet.add(orsi);
-		personSet.add(milan);
-		personSet.add(krisztian);
-		personSet.add(balazs);
-		personSet.add(pista);
+		Map<Person, Integer> personMap = new HashMap<>();
+		personMap.put(orsi, 1);
+		personMap.put(milan, 2);
+		personMap.put(krisztian, 3);
+		personMap.put(balazs, 4);
 
-		for (Person person : personSet)
+		System.out.println(personMap.get(pista));
+
+		for (Person person : personMap.keySet())
 		{
 			System.out.println(person);
 		}
 
-		System.out.println(personSet.contains(pista));
+		// Set<Person> personSet = new HashSet<Person>();
+		// personSet.add(orsi);
+		// personSet.add(milan);
+		// personSet.add(krisztian);
+		// personSet.add(balazs);
+		// personSet.add(pista);
+		//
+		// for (Person person : personSet)
+		// {
+		// System.out.println(person);
+		// }
+		//
+		// System.out.println(personSet.contains(pista));
 
 		// List<Person> personList = new ArrayList<>();
 		// personList.add(orsi);
